@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio - Desenvolvedora</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <style>
+        :root {
+            --mustard: #facc15;
+            --mustard-dark: #eab308;
+        }
+
+        @keyframes float-slow {
+            0% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+        }
+
+        @keyframes float-medium {
+            0% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(15px) rotate(-10deg);
+            }
+
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+        }
+
+        @keyframes float-fast {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-30px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .animate-float-slow {
+            animation: float-slow 8s ease-in-out infinite;
+        }
+
+        .animate-float-medium {
+            animation: float-medium 6s ease-in-out infinite;
+        }
+
+        .animate-float-fast {
+            animation: float-fast 4s ease-in-out infinite;
+        }
+    </style>
+
+</head>
+
+<body class="bg-black text-white scroll-smooth">
+
+    <!-- Hero / Apresentação com Formas -->
+    <section
+        class="relative min-h-screen flex flex-col justify-center items-center px-6 text-center overflow-hidden animate__animated animate__fadeIn">
+
+        <!-- Formas animadas -->
+        <div class="absolute top-10 left-10 w-24 h-24 bg-yellow-200/20 rounded-full animate-float-medium hidden md:block ">
+        </div>
+        <div
+            class="absolute bottom-20 right-12 w-16 h-16 bg-yellow-400/10 rotate-45 animate-float-medium hidden md:block">
+        </div>
+        <div
+            class="absolute top-1/3 right-1/4 w-32 h-32 bg-yellow-200/10 rounded-full animate-float-medium hidden md:block">
+        </div>
+
+        <!-- Conteúdo principal -->
+   <h1 class="text-4xl md:text-6xl font-extrabold mb-6 text-[var(--mustard)] leading-tight z-10">
+            Daniele Nicolini
+        </h1>
+        <p class="max-w-2xl text-lg text-gray-300 leading-relaxed z-10">
+            Desenvolvedora Full-Stack com foco em back-end
+        <div class="flex gap-6 mt-6 z-10">
+            <a href="#" class="hover:text-[var(--mustard)] transition"><i data-feather="github" class="w-6 h-6"></i></a>
+            <a href="#" class="hover:text-[var(--mustard)] transition"><i data-feather="linkedin" class="w-6 h-6"></i></a>
+        </div>
+    </section>
+
+
+    <!-- Tecnologias -->
+    <section class="py-20 px-6 bg-gray-900 animate__animated animate__fadeInUp">
+        <h2 class="text-3xl font-semibold text-center mb-10 text-[var(--mustard)]">Tecnologias</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto text-gray-300 text-base">
+            <div class="flex items-center gap-3 hover:scale-105 transition"><i data-feather="git-branch"></i> Git /
+                GitHub</div>
+            <div class="flex items-center gap-3 hover:scale-105 transition"><i data-feather="code"></i> PHP / Laravel
+            </div>
+            <div class="flex items-center gap-3 hover:scale-105 transition"><i data-feather="layout"></i> React / Vue /
+                Tailwind</div>
+            <div class="flex items-center gap-3 hover:scale-105 transition"><i data-feather="database"></i> MySQL / SQL
+                Server / MongoDB</div>
+            <div class="flex items-center gap-3 hover:scale-105 transition"><i data-feather="globe"></i> WordPress</div>
+            <div class="flex items-center gap-3 hover:scale-105 transition"><i data-feather="box"></i> Docker</div>
+            <div class="flex items-center gap-3 hover:scale-105 transition"><i data-feather="terminal"></i> Linux /
+                Windows</div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section class="py-20 px-6 bg-black animate__animated animate__fadeInUp animate__delay-1s">
+        <h2 class="text-3xl font-semibold text-center mb-12 text-[var(--mustard)]">Projetos</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+            <!-- Projeto 1 -->
+            <div class="bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.03] transition">
+                <h3 class="text-xl font-bold text-[var(--mustard)] mb-2">Projeto 1</h3>
+                <p class="text-gray-300 text-sm">Descrição curta sobre o projeto, tecnologias utilizadas e objetivo
+                    principal.</p>
+                <a href="#" class="inline-block mt-4 text-sm text-[var(--mustard-dark)] hover:underline">Ver Projeto
+                    →</a>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.03] transition">
+                <h3 class="text-xl font-bold text-[var(--mustard)] mb-2">Projeto 2</h3>
+                <p class="text-gray-300 text-sm">Descrição curta sobre o projeto, tecnologias utilizadas e objetivo
+                    principal.</p>
+                <a href="#" class="inline-block mt-4 text-sm text-[var(--mustard-dark)] hover:underline">Ver Projeto
+                    →</a>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg hover:scale-[1.03] transition">
+                <h3 class="text-xl font-bold text-[var(--mustard)] mb-2">Projeto 3</h3>
+                <p class="text-gray-300 text-sm">Descrição curta sobre o projeto, tecnologias utilizadas e objetivo
+                    principal.</p>
+                <a href="#" class="inline-block mt-4 text-sm text-[var(--mustard-dark)] hover:underline">Ver Projeto
+                    →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="py-20 px-6 bg-gray-900 text-center animate__animated animate__fadeInUp animate__delay-2s">
+        <h2 class="text-3xl font-semibold text-[var(--mustard)] mb-6">Vamos conversar?</h2>
+        <p class="text-gray-300 mb-8 max-w-xl mx-auto">
+            Entre em contato comigo para parcerias, oportunidades ou para tirar dúvidas. Estou sempre aberta a novos
+            desafios!
+        </p>
+        <div class="flex justify-center gap-6 flex-wrap">
+            <a href="#"
+                class="bg-[var(--mustard)] text-black px-6 py-3 rounded-full font-medium hover:bg-yellow-400 transition">LinkedIn</a>
+            <a href="#"
+                class="border border-[var(--mustard)] text-[var(--mustard)] px-6 py-3 rounded-full font-medium hover:bg-[var(--mustard)] hover:text-black transition">GitHub</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-gray-500 text-sm border-t border-gray-700">
+        © 2025 Desenvolvedora Full-Stack. Todos os direitos reservados.
+    </footer>
+
+    <!-- Ativa ícones -->
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>
