@@ -1,0 +1,6 @@
+# Robots.txt para https://nicolini.tech
+
+User-agent: *
+Allow: /
+
+Sitemap: https://nicolini.tech/sitemap.xml
